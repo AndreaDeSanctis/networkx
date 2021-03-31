@@ -32,7 +32,7 @@ def greedy_path(G ,source, target, heuristic=None, weight='weight'):
         
         """check if there are neighbors to build the path"""
         if len(filtered) == 0:
-            print(target + " node unreachable from " + source)
+            print(str(target) + " node unreachable from " + str(source))
             raise nx.NetworkXNoPath()
         
         """choosing the best current node using the heuristic"""
